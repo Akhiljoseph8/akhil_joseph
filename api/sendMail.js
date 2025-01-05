@@ -1,9 +1,10 @@
 const nodemailer = require('nodemailer');
 
 export default async function handler(req, res) {
-  if (req.method === 'POST') {
+  // if (req.method === 'POST') {
     const { name, place, email, phone, message } = req.body;
     // Configure nodemailer
+    console.log(email)
     const transporter = nodemailer.createTransport({
       service: 'gmail', // Replace with your email provider
       auth: {
@@ -33,7 +34,7 @@ export default async function handler(req, res) {
     } catch (error) {
       res.status(500).json({ success: false, message: 'Error sending email', error: error.message });
     }
-  } else {
-    res.status(405).json({ message: 'Method not allowed' });
-  }
+  // } else {
+  //   res.status(405).json({ message: 'Method not allowed' });
+  // }
 }
