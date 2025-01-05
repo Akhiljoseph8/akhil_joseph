@@ -1,5 +1,4 @@
 const nodemailer = require('nodemailer');
-console.log("hiiiii")
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
