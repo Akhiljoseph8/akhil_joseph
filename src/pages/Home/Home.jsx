@@ -49,7 +49,7 @@ const Home = () => {
 
     try {
         console.log('send')
-      const response = await axios.post('https://akhil-joseph.vercel.app/src/api/sendMail', formData); // Serverless function URL
+      const response = await axios.post('/api/sendMail', formData); // Serverless function URL
       setSuccessMessage(response.data.message);
     } catch (error) {
       setErrorMessage(error.response?.data?.message || 'Error sending email');
@@ -67,37 +67,7 @@ const Home = () => {
 
   return (
     <div>
-      {/* Header Section */}
-      {/* <header
-      className={` header fixed-top ${isScrolled ? "bg-white header-style" : ""}`}
-      id="site-header"
-      style={{ width: "100%", zIndex: 1030 ,paddingLeft:"10px", paddingRight:'10px' }}
-    >
-        <div className="row">
-          <div className="col-md-6 col-7 p-3 pl-5">
-            <h2 style={{ fontWeight: 'bold' }} className='toph2'>Akhil Joseph</h2>
-          </div>
-          <div className="col-md-6 col-5 my-auto">
-            <nav className="navbar navbar-expand-lg navbar-white">
-              <button
-                className="navbar-toggler ms-auto"
-                type="button"
-                onClick={() => setNavbarExpanded(!navbarExpanded)}
-              >
-                <span className={`toggler-icon ${navbarExpanded ? 'fa-times' : 'fa-bars'}`}></span>
-              </button>
-              <div className={`collapse navbar-collapse ${navbarExpanded ? 'show' : ''}`} id="navbarScroll">
-                <ul className="navbar-nav ms-auto" id="nav">
-                  <li className="nav-item"><a className="nav-link active" href="/">Home</a></li>
-                  <li className="nav-item"><a className="nav-link" href="/services">Services</a></li>
-                  <li className="nav-item"><a className="nav-link" href="/about">About me</a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </header> */}
-
+      
       {/* Home Section */}
       <section id="home" className="home">
         <div className="container home-container text-center">
@@ -218,28 +188,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Footer Section */}
-      {/* <footer className="footer text-center py-5 bg-dark">
-        <div className="container pt-1">
-          <div className="mx-auto" style={{ maxWidth: '600px' }}>
-            <h6 className="mt-2 text-white">Follow Me</h6>
-            <div className="social-icons-main mt-4 pb-3">
-              <ul className="social-icons">
-                <li><a href="https://www.facebook.com/akhil.joseph.351104" target="_blank" rel="noopener noreferrer"></a></li>
-                <li><a href="https://www.linkedin.com/in/akhiljoseph8" target="_blank" rel="noopener noreferrer"></a></li>
-                <li><a href="https://www.instagram.com/akhil.joh/" target="_blank" rel="noopener noreferrer"></a></li>
-              </ul>
-            </div>
-          </div>
-          <p className="footer-text text-white pt-3">
-            2024 Biodata. | Design by <a href="index.html" className="link">Akhil Joseph.</a>
-          </p>
-        </div>
-      </footer> */}
-
-
-
-      
+ 
     </div>
     
     
