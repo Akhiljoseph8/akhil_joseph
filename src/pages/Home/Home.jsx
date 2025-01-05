@@ -49,7 +49,7 @@ const Home = () => {
 
     try {
         console.log('send')
-      const response = await axios.post('api/sendMail', formData); // Serverless function URL
+      const response = await axios.post('https://akhil-joseph.vercel.app/api/sendMail', formData); // Serverless function URL
       setSuccessMessage(response.data.message);
     } catch (error) {
       setErrorMessage(error.response?.data?.message || 'Error sending email');
