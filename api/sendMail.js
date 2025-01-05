@@ -1,15 +1,15 @@
 const nodemailer = require('nodemailer');
+console.log("hiiiii")
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { name, place, email, phone, message } = req.body;
-
     // Configure nodemailer
     const transporter = nodemailer.createTransport({
       service: 'gmail', // Replace with your email provider
       auth: {
         user: "akhiljosephaj85@gmail.com", // Add email to your environment variables
-        pass: 'rzmf jpzd uegf jbhm', // Add app password here
+        pass: 'oetp qjsg ikld jsdz', // Add app password here
       },
     });
 
