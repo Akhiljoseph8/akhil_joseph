@@ -61,7 +61,7 @@ const About = () => {
             <div className="col-lg-4">
               <div className="position-relative">
                 <img
-                  src="../src/assets/images/akhilimg.png"
+                  src="/images/akhilimg.png"
                   alt="no"
                   className="radius-image img-fluid about-img"
                 />
@@ -101,7 +101,7 @@ const About = () => {
                 ))}
               </div>
               <a
-                href="../src/assets/resume/Akhil_Resume.pdf"
+                href="https://akhil-joseph.vercel.app/resume/Akhil_Resume.pdf"
                 target="_blank"
                 className="btn-style mt-5"
               >
