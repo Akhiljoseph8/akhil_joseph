@@ -119,7 +119,7 @@ const Home = () => {
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="card text-center p-3 mt-2">
-              <img src="../../../assets/images/content_writing.jpg" alt=""></img>
+              <img src="../../../src/assets/images/content_writing.jpg" alt=""></img>
               <div class="card-body">
                 <h4 class="card-title pt-5">Content Writing</h4>
                 <a href="/services" class="btn more p-0">Explore More <i class="fas fa-long-arrow-alt-right ms-1"></i></a>
@@ -137,7 +137,7 @@ const Home = () => {
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="card text-center p-3 mt-2">
-              <img src="src/assets/images/web_updation.jpg" alt=""></img>
+              <img src="/images/web_updation.jpg" alt=""></img>
               <div class="card-body">
                 <h4 class="card-title pt-5">Web Updation</h4>
                 <a href="/services" class="btn more p-0">Explore More <i class="fas fa-long-arrow-alt-right ms-1"></i></a>
