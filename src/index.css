@@ -228,7 +228,7 @@ color: #DC5B21;
   }
 .contact-section{
   background-color: #fef8ed;
-  background: url("assets/images/contact_me.jpg");
+  background: url("/images/contact_me.jpg");
 }
 .card:hover{
   background-color: #17a2b8;
