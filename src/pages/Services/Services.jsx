@@ -8,58 +8,6 @@ function Services() {
     };
   return (
     <>
-      {/* Header */}
-      {/* <header
-        className="header fixed-top bg-white header-style"
-        id="site-header"
-        style={{ width: '100%', zIndex: 1030 }}
-      >
-        <div className="row">
-          <div className="col-md-6 col-7 p-3 pl-5">
-            <h2 className="toph2" style={{ fontWeight: 'bold' }}>
-              Akhil Joseph
-            </h2>
-          </div>
-          <div className="col-md-6 col-5 my-auto">
-            <nav className="navbar navbar-expand-lg navbar-white">
-              <button
-                id="navbar-toggler"
-                className="navbar-toggler ml-auto"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarScroll"
-                aria-controls="navbarScroll"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span
-                  id="toggler-icon"
-                  className="toggler-icon fa icon-expand fa-bars"
-                ></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarScroll">
-                <ul className="navbar-nav ml-auto">
-                  <li className="nav-item">
-                    <a className="nav-link" href="/">
-                      Home
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link active" href="/services">
-                      Services
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="/about">
-                      About me
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </header> */}
 
       {/* Services */}
       <section className="py-5 services bg-light">
@@ -182,45 +130,6 @@ function Services() {
         </div>
       </section>
 
-      {/* Footer */}
-      {/* <footer className="footer text-center py-5 mt-4 bg-dark">
-        <div className="container pt-1">
-          <div className="mx-auto" style={{ maxWidth: '600px' }}>
-            <h6 className="mt-2 text-white">Follow Me</h6>
-            <div className="social-icons-main mt-4 pb-3">
-              <ul className="social-icons">
-                {[
-                  {
-                    link: 'https://www.facebook.com/akhil.joseph.351104',
-                    icon: 'fab fa-facebook-f',
-                  },
-                  {
-                    link: 'https://www.linkedin.com/in/akhiljoseph8',
-                    icon: 'fab fa-linkedin-in',
-                  },
-                  {
-                    link: 'https://www.instagram.com/akhil.joh/',
-                    icon: 'fab fa-instagram',
-                  },
-                ].map((social, idx) => (
-                  <li key={idx}>
-                    <a href={social.link} target="_blank" rel="noreferrer">
-                      <i className={social.icon}></i>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <p className="footer-text text-white pt-3">
-            2024 Biodata. | Design by{' '}
-            <a href="index.html" className="link">
-              Akhil Joseph
-            </a>
-            .
-          </p>
-        </div>
-      </footer> */}
     </>
   );
 }

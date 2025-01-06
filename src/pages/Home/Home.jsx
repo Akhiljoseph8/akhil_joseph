@@ -92,7 +92,7 @@ const Home = () => {
             <div className="banner-right col-md-6 col-6 align-items-center">
               <h4 className="banner-h4">Hi, I'm <b>Akhil Joseph</b></h4>
               <h1 className="mb-3 mt-1 banner-h1 text-info">DEVELOPER</h1>
-              <p className="banner-sub me-md-8">I love to work in full stack development. I always try my best to make good websites.</p>
+              <p className="banner-sub me-md-8">Crafting seamless web experiences with passion and precision</p>
               <div className="align-items-center buttons-banner ">
                 <a href="/about" className="btn-style">Hire Me</a>
               </div>
