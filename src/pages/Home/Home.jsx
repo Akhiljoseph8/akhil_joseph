@@ -48,7 +48,6 @@ const Home = () => {
     e.preventDefault();
 
     try {
-        console.log('send')
       const response = await axios.post('/api/sendMail', formData); // Serverless function URL
       setSuccessMessage(response.data.message);
     } catch (error) {
@@ -70,7 +69,7 @@ const Home = () => {
       
       {/* Home Section */}
       <section id="home" className="home">
-        <div className="container home-container text-center">
+        <div className=" home-container text-center">
           <div className="">
             <div className="banner-right col-md-6 col-6 align-items-center">
               <h4 className="banner-h4">Hi, I'm <b>Akhil Joseph</b></h4>

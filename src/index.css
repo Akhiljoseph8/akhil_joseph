@@ -12,6 +12,12 @@
   --bg-light: #ebf4f5;
   --box-shadow: 0 0.5rem 1rem rgb(12 12 12 / 5%);
 }
+
+body{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 .toph2{
  color: #DC5B21;
 }
@@ -108,7 +114,6 @@
   align-items: center
 }
 .banner-right {
-  padding-right: 5%;
   align-items: center;
   padding-bottom: 5%;  
 }
@@ -126,7 +131,6 @@ color: #DC5B21;
 @media (max-width: 423px){
   .toph2{
       font-size: 19px;
-      margin-left: -27px;
     }
     .nav-link {
       font-size: 14px;
@@ -248,6 +252,10 @@ color: #DC5B21;
 ul.social-icons li {
   display: inline-block;
 }
+ul.social-icons{
+  margin: 0px;
+  padding: 0px;
+}
 ul.social-icons li a {
   display: inline-block;
   height: 40px;
@@ -257,6 +265,7 @@ ul.social-icons li a {
   background: rgb(255 255 255 / 10%);
   color: #fff;
   text-align: center;
+  margin-right: 2px;
 }
 p.footer-text {
   border-top: 1px solid #fff3;
@@ -275,6 +284,8 @@ ul.social-icons :hover{
   background-color: #DC5B21;
   color: #fff;
   text-align: center;
+  margin-right: 2px;
+
 }
 ul {
   margin: 0;
@@ -322,6 +333,7 @@ a, a:hover, button, button:hover {
 }
 .link{
   color: #ffff;
+  text-decoration: none;
 }
 .link:hover{
   color: #DC5B21;
