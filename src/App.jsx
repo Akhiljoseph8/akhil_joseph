@@ -6,6 +6,7 @@ import About from './pages/About/About';
 import Services from './pages/Services/Services';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <>
      
         <Router>
+        <ToastContainer />
         <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />

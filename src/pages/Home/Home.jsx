@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
 
@@ -50,6 +52,9 @@ const Home = () => {
     try {
       const response = await axios.post('/api/sendMail', formData); // Serverless function URL
       setSuccessMessage(response.data.message);
+      if(response.data.message){
+        showSuccessToast()
+      }
     } catch (error) {
       setErrorMessage(error.response?.data?.message || 'Error sending email');
     }
@@ -61,6 +66,19 @@ const Home = () => {
       email: '',
       phone: '',
       message: '',
+    });
+  };
+
+  const showSuccessToast = () => {
+    toast.success("Message sent successfully", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
     });
   };
 
